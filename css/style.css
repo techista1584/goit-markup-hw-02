@@ -5,6 +5,7 @@
 
 body {
     font-family:"Roboto";
+
     
 }
 
@@ -53,8 +54,21 @@ body {
     text-decoration: none;
 }
 
+.main-header-menu-link:hover {
+    color: var(--iris, #4D5AE5);
+    /* Body Medium */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.32px;
+    text-decoration: none;
+}
+
 ul {
     list-style: none;
+
 }
 
 .address-link {
@@ -125,13 +139,6 @@ h2 {
     text-transform: capitalize;
 }
 
-.team-name {
-    text-align: center;
-}
-
-.team-role {
-    text-align: center;
-}
 .footer {
     background: var(--navyblue, #2E2F42);
 
