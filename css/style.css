@@ -130,8 +130,7 @@ h2 {
 }
 
 .team-name,.team-role{
-    text-align: center;
-    
+    text-align: center;   
 }
 .footer {
     background: var(--navyblue, #2E2F42);
