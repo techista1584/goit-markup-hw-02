@@ -142,7 +142,7 @@ body {
   color: var(--navyblue);
 }
 
-.team-list.list {
+.team-list {
   list-style-type: none;
 }
 
@@ -185,11 +185,11 @@ body {
   font-weight: 400;
 }
 
-.filter-list.list {
+.filter-list {
   list-style-type: none;
 }
 
-.filter-btn.active {
+.filter-btn-active {
   display: flex;
   align-items: flex-start;
   border-radius: 4px;
