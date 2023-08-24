@@ -200,6 +200,10 @@ body {
   color: var(--white);
 }
 
+.filter-btn-active:hover {
+  cursor: pointer;
+}
+
 .filter-btn {
   display: flex;
   justify-content: center;
@@ -211,6 +215,7 @@ body {
 }
 
 .filter-btn:hover {
+  cursor:pointer;
   background-color: var(--ocean);
   color: var(--white);
 }
