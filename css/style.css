@@ -1,25 +1,23 @@
-
 :root {
-  --slate:#434455;
-  --light_slate:#8E8F99;
-  --navyblue:#2E2F42;
-  --iris:#4D5AE5;
-  --ocean:#404BBF;
-  --green:#31D0AA;
-  --white:#FFF;
-  --cloud: #F4F4FD;
-  --cornflower:#E7E9FC;
+  --slate: #434455;
+  --light_slate: #8e8f99;
+  --navyblue: #2e2f42;
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --green: #31d0aa;
+  --white: #fff;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
 }
 
 * {
   margin-left: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 body {
-  margin-left: 156px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -37,10 +35,14 @@ body {
 
 .logo-web {
   color: var(--iris);
+  line-height: 21px; /* 116.667% */
+  letter-spacing: 0.54px;
 }
 
 .logo-studio {
   color: var(--navyblue);
+  line-height: 21px;
+  letter-spacing: 0.54px;
 }
 
 .nav-list {
@@ -50,6 +52,8 @@ body {
 .nav-list-item-link {
   color: var(--navyblue);
   font-weight: 500px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .nav-list-item-link:hover {
@@ -69,25 +73,24 @@ body {
 
 .address-list-item {
   color: var(--slate);
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
 
 .address-list-item:hover {
   color: var(--ocean);
 }
 
-.section-main {
+.section.hero {
   background-color: var(--navyblue);
 }
 
-.section-main-text {
+.hero-text {
   text-align: center;
   color: var(--white);
   font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 60px;
   letter-spacing: 1.12px;
-
 }
 
 .main-button {
@@ -96,32 +99,39 @@ body {
   align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
-  background: var(--iris, #4D5AE5);
+  background: var(--iris, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  font-family: "Roboto";
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
   color: var(--white);
+  font-family: inherit;
+  outline: none;
+  border: unset;
 }
 
 .main-button:hover {
   background-color: var(--ocean);
 }
 
-.features-list.list{
+.features-list.list {
   list-style-type: none;
 }
 
-.features-items {
+.features-items-title {
   color: var(--navyblue);
   font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
 }
 
 .features-paragraph {
   color: var(--slate);
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  font-size: 16px;
 }
 
 .services-header {
@@ -129,6 +139,8 @@ body {
   text-align: center;
   font-size: 36px;
   color: var(--navyblue);
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .services-list.list {
@@ -140,6 +152,8 @@ body {
   text-align: center;
   font-size: 36px;
   color: var(--navyblue);
+  line-height: 40px;
+  letter-spacing: 0.72px;
 }
 
 .team-list {
@@ -151,12 +165,15 @@ body {
   font-size: 20px;
   font-weight: 500;
   color: var(--navyblue);
+  line-height: 24px;
+  letter-spacing: 0.4px;
 }
 
 .team-role {
   text-align: center;
-  font-weight: 400;
   color: var(--slate);
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .footer {
@@ -174,15 +191,20 @@ body {
 
 .footer-logo-web {
   color: var(--iris);
+  line-height: 21px;
+  letter-spacing: 0.54px;
 }
 
 .footer-logo-studio {
   color: var(--cloud);
+  line-height: 21px;
+  letter-spacing: 0.54px;
 }
 
 .footer-paragraph {
   color: var(--cloud);
-  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .filter-list {
@@ -198,6 +220,8 @@ body {
   background: var(--ocean);
   padding: 12px 24px;
   color: var(--white);
+  line-height: 24px;
+  letter-spacing: 0.64px;
 }
 
 .filter-btn-active:hover {
@@ -212,10 +236,12 @@ body {
   border: 1px solid var(--cornflower);
   background: var(--cloud);
   padding: 12px 24px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
 }
 
 .filter-btn:hover {
-  cursor:pointer;
+  cursor: pointer;
   background-color: var(--ocean);
   color: var(--white);
 }
@@ -228,8 +254,12 @@ body {
   color: var(--navyblue);
   font-size: 20px;
   font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
 }
 
 .category {
   color: var(--slate);
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
