@@ -51,19 +51,17 @@ body {
 
 .nav-list-item-link {
   color: var(--navyblue);
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
 .nav-list-item-link:hover {
-  color: var(--ocean);
-  text-decoration: underline;
+  color: var(--ocean);;
 }
 
 .nav-list-item-link-active {
   color: var(--ocean);
-  text-decoration: underline;
 }
 
 .address-list {
@@ -109,6 +107,7 @@ body {
   font-family: inherit;
   outline: none;
   border: unset;
+  cursor: pointer;
 }
 
 .main-button:hover {
@@ -216,16 +215,20 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid var(--iris);
+  border: 1px solid var(--ocean);
   background: var(--ocean);
   padding: 12px 24px;
   color: var(--white);
   line-height: 24px;
   letter-spacing: 0.64px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .filter-btn-active:hover {
   cursor: pointer;
+  border-color: var(--ocean);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
 
 .filter-btn {
@@ -244,6 +247,8 @@ body {
   cursor: pointer;
   background-color: var(--ocean);
   color: var(--white);
+  border-color: var(--ocean);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .projects-list.list {
