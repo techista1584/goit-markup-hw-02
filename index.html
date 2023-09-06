@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Provides digital and marketing growth solutions.">
-    <title>WebStudio</title>
+    <title>Mateo, Ruby L.</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
         
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,123 +15,142 @@
 <body>  
     <!-- Header Section -->
     <header class="header">
-        <nav class="nav">
-            <!-- Logo -->
-            <a href="/goit-markup-hw-02/" class ="header-logo">
-                <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
-            </a>
-            <ul class="nav-list">
-            <!-- navigation -->
-                <li class ="nav-list-item">
-                    <a class ="nav-list-item-link" href="/goit-markup-hw-02/">Studio</a>
-                </li>
-                <li class ="nav-list-item">
-                    <a class ="nav-list-item-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class ="nav-list-item">
-                    <a class ="nav-list-item-link" href="/goit-markup-hw-02/">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- contact details -->
-        <address class="address">
-            <ul class="address-list">
-                <li><a class ="address-list-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class ="address-list-item" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+        <div class="container main-header-container">
+            <nav class="nav">
+                <!-- Logo -->
+                <a href="/goit-markup-hw-02/" class ="header-logo link">
+                    <span class="logo-web">Web</span><span class="logo-studio link">Studio</span>
+                </a>
+                <ul class="nav-list list">
+                <!-- navigation -->
+                    <li class ="nav-list-item">
+                        <a class ="nav-list-item-link link" href="/goit-markup-hw-02/">Studio</a>
+                    </li>
+                    <li class ="nav-list-item">
+                        <a class ="nav-list-item-link link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class ="nav-list-item">
+                        <a class ="nav-list-item-link link" href="/goit-markup-hw-02/">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- contact details -->
+            <address class="address">
+                <ul class="address-list list">
+                    <li><a class ="address-list-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class ="address-list-item link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
     </header>
     <!-- Main Section -->
     <main class="main">
         <!-- Scrolls -->
-        <section class="section hero">
-            <h1 class="hero-text">Effective Solutions<br>
-                for Your Business</h1>
-            <button type="button" class="main-button">
-                Order Service
-            </button>
+        <section class="section-hero">
+            <div class="container section-hero-main">
+                <h1 class="hero-text">Effective Solutions<br>
+                    for Your Business</h1>
+                <button type="button" class="button main-button">
+                    Order Service
+                </button>
+            </div>
         </section>
             <!-- Section1 -->
         <section class="section features">
-            <h2 hidden>Features</h2>
-            <ul class="features-list list">
-                <li class="features-list-item">
-                    <h3 class="features-items-title">Strategy</h3>
-                    <p class="features-paragraph">Our goal is to identify the business<br>
-                    problem to walk away with the<br>
-                    perfect and creative solution.
-                    </p>
-                </li>
-                <li class="features-list-item">
-                    <h3 class="features-items-title">Punctuality</h3>
-                    <p class="features-paragraph">Bring the key message to the<br>
-                    brand's audience for the best price<br>
-                    within the shortest possible time.
-                    </p>
-                </li>
-                <li class="features-list-item">
-                    <h3 class="features-items-title">Diligence</h3>
-                    <p class="features-paragraph">Research and confirm brands that<br>
-                    present the strongest digital growth<br>
-                    opportunities and minimize risk.
-                    </p>
-                </li>
-                <li class="features-list-item">
-                    <h3 class="features-items-title">Technologies</h3>
-                    <p class="features-paragraph">Design practice focused on digital<br>
-                    experiences. We bring forth a deep<br>
-                    passion for problem-solving.
-                    </p>
-                </li>
-            </ul>
+            <div class="container section-container">
+                <h2 hidden>Features</h2>
+                <ul class="features-list list">
+                    <li class="features-list-item">
+                        <h3 class="features-items-title">Strategy</h3>
+                        <p class="features-paragraph">Our goal is to identify the business<br>
+                        problem to walk away with the<br>
+                        perfect and creative solution.
+                        </p>
+                    </li>
+                    <li class="features-list-item">
+                        <h3 class="features-items-title">Punctuality</h3>
+                        <p class="features-paragraph">Bring the key message to the<br>
+                        brand's audience for the best price<br>
+                        within the shortest possible time.
+                        </p>
+                    </li>
+                    <li class="features-list-item">
+                        <h3 class="features-items-title">Diligence</h3>
+                        <p class="features-paragraph">Research and confirm brands that<br>
+                        present the strongest digital growth<br>
+                        opportunities and minimize risk.
+                        </p>
+                    </li>
+                    <li class="features-list-item">
+                        <h3 class="features-items-title">Technologies</h3>
+                        <p class="features-paragraph">Design practice focused on digital<br>
+                        experiences. We bring forth a deep<br>
+                        passion for problem-solving.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Section2 -->
-        <section class="section services">
-            <h2 class="services-header">What are we doing</h2>
-                <ul class="services-list list">
-                    <li class="services-list-items"><img src="./images/pcdashboard.png" alt="picture of a computer showing dashboard" width="360"></li>
-                    <li class="services-list-items"><img src="./images/mobile_screens.jpg" alt="picture of mobile screens" width="360"></li>
-                    <li class="services-list-items"><img src="./images/holding_phone.jpg" alt="picture of a hand holding a cellphone" width="360"></li>
-                </ul>
+        <section class="section-services">
+            <div class="container section-no-top-padding">
+                <h2 class="services-header section-title">What are we doing</h2>
+                    <ul class="services-list list">
+                        <li class="services-list-items"><img src="./images/pcdashboard.png" alt="picture of a computer showing dashboard" width="360"></li>
+                        <li class="services-list-items"><img src="./images/mobile_screens.jpg" alt="picture of mobile screens" width="360"></li>
+                        <li class="services-list-items"><img src="./images/holding_phone.jpg" alt="picture of a hand holding a cellphone" width="360"></li>
+                    </ul>
+            </div>
         </section>
 
         <!-- Section3 -->
         <section class="section team">
-            <h2 class="team-header">Our Team</h2>
-                <ul class="team-list">
-                    <li class="team-list-items">
-                        <img src="./images/mguerrero.jpg" alt="picture of Mark Guerrero" width="264">
-                        <h3 class="team-name">Mark Guerrero</h3>
-                        <p class="team-role">Product Designer</p>
-                    </li>
-                    <li class="team-list-items">
-                        <img src="./images/tford.jpg" alt="picture of Tom Ford" width="264">
-                        <h3 class="team-name">Tom Ford</h3>
-                        <p class="team-role">Frontend Developer</p>
-                    </li>
-                    <li class="team-list-items">
-                        <img src="./images/cgarcia.jpg" alt="picture of Camila Garcia" width="264">
-                        <h3 class="team-name">Camila Garcia</h3>
-                        <p class="team-role">Marketing</p>
-                    </li>
-                    <li class="team-list-items">
-                        <img src="./images/dwilson.jpg" alt="picture of Daniel Wilson" width="264">
-                        <h3 class="team-name">Daniel Wilson</h3>
-                        <p class="team-role">UI Designer</p>
-                    </li>
-                </ul>
+            <div class="container section-container">
+                <h2 class="team-header section-title">Our Team</h2>
+                    <ul class="team-list list">
+                        <li class="team-list-items">
+                            <img src="./images/mguerrero.jpg" alt="picture of Mark Guerrero" width="264">
+                            <div class="team-details">
+                                <h3 class="team-name">Mark Guerrero</h3>
+                                <p class="team-role">Product Designer</p>
+                            </div>
+                        </li>
+                        <li class="team-list-items">
+                            <img src="./images/tford.jpg" alt="picture of Tom Ford" width="264">
+                            <div class="team-details">
+                                <h3 class="team-name">Tom Ford</h3>
+                                <p class="team-role">Frontend Developer</p>
+                            </div>
+                        </li>
+                        <li class="team-list-items">
+                            <img src="./images/cgarcia.jpg" alt="picture of Camila Garcia" width="264">
+                            <div class="team-details">
+                                <h3 class="team-name">Camila Garcia</h3>
+                                <p class="team-role">Marketing</p>
+                            </div>
+                        </li>
+                        <li class="team-list-items">
+                            <img src="./images/dwilson.jpg" alt="picture of Daniel Wilson" width="264">
+                            <div class="team-details">
+                                <h3 class="team-name">Daniel Wilson</h3>
+                                <p class="team-role">UI Designer</p>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
         </section>
     </main>
     <!-- Footer Section -->
     <footer class="footer">
-        <!-- Logo -->
-        <a class="footer-logo" href="/goit-markup-hw-02/">
-            <span class="footer-logo-web">web</span><span class="footer-logo-studio">studio</span>
-        </a>
-        <p class="footer-paragraph">Increase the flow of customers and<br>
-            sales for your business with digital<br>
-            marketing & growth solutions.</p>
+        <div class="container section-footer">
+            <!-- Logo -->
+            <a class="footer-logo link" href="/goit-markup-hw-02/">
+                <span class="footer-logo-web">web</span><span class="footer-logo-studio">studio</span>
+            </a>
+            <p class="footer-paragraph">Increase the flow of customers and<br>
+                sales for your business with digital<br>
+                marketing & growth solutions.</p>
+        </div>
     </footer>
 </body>
 </html>

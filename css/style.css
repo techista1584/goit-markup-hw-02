@@ -11,10 +11,21 @@
 }
 
 * {
-  margin-left: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -22,8 +33,40 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
-  width: 1440px;
-  height: 2592px;
+}
+
+.container {
+  margin: 0 auto; /* */
+  width: 1158px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--cornflower);
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 24px 0;
+}
+
+.main-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: inline-flex;
+  gap: 76px;
 }
 
 .header-logo {
@@ -35,8 +78,9 @@ body {
 
 .logo-web {
   color: var(--iris);
-  line-height: 21px; /* 116.667% */
+  line-height: 21px;
   letter-spacing: 0.54px;
+  display: inline-flex;
 }
 
 .logo-studio {
@@ -46,7 +90,8 @@ body {
 }
 
 .nav-list {
-  list-style-type: none;
+  display: flex;
+  gap: 40px;
 }
 
 .nav-list-item-link {
@@ -57,7 +102,7 @@ body {
 }
 
 .nav-list-item-link:hover {
-  color: var(--ocean);;
+  color: var(--ocean);
 }
 
 .nav-list-item-link-active {
@@ -65,8 +110,9 @@ body {
 }
 
 .address-list {
-  list-style-type: none;
   font-style: normal;
+  display: inline-flex;
+  gap: 40px;
 }
 
 .address-list-item {
@@ -79,8 +125,10 @@ body {
   color: var(--ocean);
 }
 
-.section.hero {
+.section-hero {
   background-color: var(--navyblue);
+  text-align: center;
+  padding-bottom: 188px;
 }
 
 .hero-text {
@@ -89,33 +137,44 @@ body {
   font-size: 56px;
   line-height: 60px;
   letter-spacing: 1.12px;
+  padding-top: 188px;
+  margin-bottom: 48px;
 }
 
-.main-button {
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 4px;
-  background: var(--iris, #4d5ae5);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.64px;
-  color: var(--white);
-  font-family: inherit;
+.button.main-button {
   outline: none;
   border: unset;
   cursor: pointer;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.main-button {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  color: var(--white);
+  font-family: inherit;
+  display: inline-flex;
 }
 
 .main-button:hover {
   background-color: var(--ocean);
 }
 
-.features-list.list {
-  list-style-type: none;
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
 }
 
 .features-items-title {
@@ -133,6 +192,18 @@ body {
   font-size: 16px;
 }
 
+.section-no-top-padding {
+  padding-bottom: 120px;
+}
+
+.section-title {
+  margin-bottom: 72px;
+}
+
+.services-list {
+  display: flex;
+  gap: 24px;
+}
 .services-header {
   text-transform: capitalize;
   text-align: center;
@@ -142,8 +213,21 @@ body {
   letter-spacing: 0.32px;
 }
 
-.services-list.list {
-  list-style-type: none;
+.team {
+  background-color: var(--cloud);
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-list-items {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-header {
@@ -155,8 +239,8 @@ body {
   letter-spacing: 0.72px;
 }
 
-.team-list {
-  list-style-type: none;
+.team-details {
+  padding: 32px 0 32px;
 }
 
 .team-name {
@@ -166,6 +250,7 @@ body {
   color: var(--navyblue);
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .team-role {
@@ -188,6 +273,10 @@ body {
   text-transform: uppercase;
 }
 
+.section-footer {
+  padding-top: 101.5px;
+}
+
 .footer-logo-web {
   color: var(--iris);
   line-height: 21px;
@@ -204,10 +293,21 @@ body {
   color: var(--cloud);
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-top: 17.5px;
+}
+
+.container-filter {
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .filter-list {
-  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .filter-btn-active {
@@ -224,14 +324,15 @@ body {
   font-size: 16px;
   font-weight: 500;
   font-family: inherit;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .filter-btn-active:hover {
   cursor: pointer;
   border-color: var(--ocean);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .filter-btn {
@@ -248,7 +349,6 @@ body {
   color: var(--iris);
   font-size: 16px;
   font-weight: 500;
- 
 }
 
 .filter-btn:hover {
@@ -256,19 +356,33 @@ body {
   background-color: var(--ocean);
   color: var(--white);
   border-color: var(--ocean);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.projects-list.list {
-  list-style-type: none;
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100%3 - 24px) / 3);
+  gap: 24px;
 }
 
-.project_card {
+.projects-list-item {
+  border: 1px solid var(--cornflower);
+  background: var(--white);
+}
+
+.project-details {
+  padding: 32px 16px;
+}
+
+.projects-item-title {
   color: var(--navyblue);
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 16px;
 }
 
 .category {
