@@ -36,7 +36,7 @@ body {
 }
 
 .container {
-  margin: 0 auto; /* */
+  margin: 0 auto;
   width: 1158px;
 }
 
@@ -128,6 +128,7 @@ body {
 .section-hero {
   background-color: var(--navyblue);
   text-align: center;
+  padding-top: 188px;
   padding-bottom: 188px;
 }
 
@@ -137,7 +138,6 @@ body {
   font-size: 56px;
   line-height: 60px;
   letter-spacing: 1.12px;
-  padding-top: 188px;
   margin-bottom: 48px;
 }
 
@@ -172,8 +172,13 @@ body {
   padding-bottom: 120px;
 }
 
+.section-services {
+  padding-bottom: 120px;
+}
+
 .features-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -192,25 +197,23 @@ body {
   font-size: 16px;
 }
 
-.section-no-top-padding {
-  padding-bottom: 120px;
-}
-
 .section-title {
   margin-bottom: 72px;
 }
 
 .services-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
+
 .services-header {
   text-transform: capitalize;
   text-align: center;
   font-size: 36px;
   color: var(--navyblue);
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  line-height: 40px;
+  letter-spacing: 0.72px;
 }
 
 .team {
@@ -222,12 +225,17 @@ body {
   gap: 24px;
 }
 
+.team-item-image {
+  display: block;
+}
+
 .team-list-items {
   border-radius: 0px 0px 4px 4px;
   background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  height: 100%;
 }
 
 .team-header {
@@ -240,7 +248,7 @@ body {
 }
 
 .team-details {
-  padding: 32px 0 32px;
+  padding: 32px 0;
 }
 
 .team-name {
@@ -263,7 +271,8 @@ body {
 .footer {
   background-color: var(--navyblue);
   flex-shrink: 0;
-  height: 312px;
+  padding-top: 101.5px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -271,10 +280,6 @@ body {
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
-}
-
-.section-footer {
-  padding-top: 101.5px;
 }
 
 .footer-logo-web {
@@ -360,11 +365,17 @@ body {
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.section-projects {
+  padding-bottom: 120px;
+}
+
 .projects-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   flex-basis: calc((100%3 - 24px) / 3);
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .projects-list-item {
